@@ -19,11 +19,16 @@ RUN conda env create --quiet --name ${ENV_NAME} --file /environment.yaml -y && \
 
 # Clone the repository and checkout the specified release
 # TODO: Use release rather than a branch
-ARG VERSION="origin/rl/add-tutorials"
+ARG VERSION="origin/rl/add-nextflow-script"
 RUN git clone https://github.com/ralatsdc/NSForest.git && \
     cd NSForest && \
     git checkout -t ${VERSION} && \
     git pull
+
+# Copy script and link package
+RUN cp NSForest/nsforest.py /usr/local/bin && \
+    chmod a+x /usr/local/bin/nsforest.py && \
+    ln -s /root/NSForest/nsforest /usr/local/bin/nsforest
 
 # Add conda installation and root dirs to PATH (instead of doing
 # 'conda activate' or specifiying path to tool)
