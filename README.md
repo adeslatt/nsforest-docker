@@ -1,4 +1,4 @@
-[![Build a Docker image](https://github.com/ralatsdc/nsforest-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/ralatsdc/nsforest-docker/actions/workflows/docker-image.yml)[![Build and push a Docker image](https://github.com/ralatsdc/nsforest-docker/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ralatsdc/nsforest-docker/actions/workflows/docker-publish.yml)
+[![Build a Docker image](https://github.com/adeslatt/nsforest-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/adeslatt/nsforest-docker/actions/workflows/docker-image.yml)
 
 # nsforest-docker
 
